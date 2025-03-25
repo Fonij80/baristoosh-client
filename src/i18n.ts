@@ -1,6 +1,6 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import resources from '../locales/resource.json';
+import resources from './resource.json';
 
 i18n
     .use(initReactI18next)
@@ -13,8 +13,8 @@ i18n
                 translation: resources.fa,
             },
         },
-        lng: 'en',
-        fallbackLng: 'fa',
+        lng: 'fa',
+        fallbackLng: 'en',
         interpolation: {
             escapeValue: false,
         },
