@@ -1,4 +1,6 @@
 import { Recipe } from '../types/Recipe';
+import cappuccino from '../assets/drinks/coffee/capuccino.jpeg';
+import espresso from '../assets/drinks/coffee/espresso.jpg';
 
 export const recipes_en: Recipe[] = [
     {
@@ -33,7 +35,7 @@ export const recipes_fa: Recipe[] = [
         category: "coffee",
         description: "شیر و شکر و قهوه",
         ingredients: [
-            "فهوه",
+            "قهوه",
             "آب جوش",
             "شکر",
             "شیر"
@@ -42,7 +44,25 @@ export const recipes_fa: Recipe[] = [
             "مخلوط کردن قهوه و شکر با کمی آب جوش",
             "اضافه کردن شیر هم‌زده شده",
         ],
-        imageUrl: "../../../assets/drinks/coffee/capuccino.jpeg",
+        imageUrl: cappuccino,
+        difficulty: "easy",
+        preparationTime: "5 دقیقه",
+        servings: 1,
+        videoUrl: "https://file-examples.com/storage/fe7b9d8b0a5c5b5e7a8a6d3/2017/04/file_example_MP4_480_1_5MG.mp4"
+    },
+    {
+        id: 2,
+        title: "اسپرسو",
+        category: "coffee",
+        description: "قهوه‌ی تلخ",
+        ingredients: [
+            "فهوه",
+            "آب جوش",
+        ],
+        instructions: [
+            "مخلوط کردن قهوه با کمی آب جوش",
+        ],
+        imageUrl: espresso,
         difficulty: "easy",
         preparationTime: "5 دقیقه",
         servings: 1,

@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { Landing } from "./pages";
-import { Layout, NotFoundError } from "./components";
+import { Layout, NotFoundError } from "./components/organisms";
 
 
 const router = createBrowserRouter([

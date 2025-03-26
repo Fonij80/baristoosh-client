@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { Box, IconButton, Paper, useMediaQuery, useTheme as useMuiTheme } from '@mui/material';
+import { Box, Paper, useMediaQuery, useTheme as useMuiTheme } from '@mui/material';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Recipe } from '../types/Recipe';
+import { Recipe } from '../../../types/Recipe';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import { RecipeDetails } from './RecipeDetails';
-import { RecipeMedia } from './RecipeMedia';
+import { IconBtn } from '../../atoms';
+import { RecipePage } from './RecipePage';
 
 const MotionPaper = motion(Paper);
 
@@ -45,38 +45,9 @@ export const RecipeBook = ({ recipes }: RecipeBookProps) => {
             p: 2,
             position: 'relative'
         }}>
-            <IconButton
-                onClick={prevPage}
-                sx={{
-                    position: 'absolute',
-                    left: 10,
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    backgroundColor: 'background.paper',
-                    boxShadow: 2,
-                    '&:hover': {
-                        backgroundColor: 'background.paper'
-                    }
-                }}
-            >
-                <ChevronLeftIcon />
-            </IconButton>
-            <IconButton
-                onClick={nextPage}
-                sx={{
-                    position: 'absolute',
-                    right: 10,
-                    top: '50%',
-                    transform: 'translateY(-50%)',
-                    backgroundColor: 'background.paper',
-                    boxShadow: 2,
-                    '&:hover': {
-                        backgroundColor: 'background.paper'
-                    }
-                }}
-            >
-                <ChevronRightIcon />
-            </IconButton>
+            <IconBtn icon={<ChevronLeftIcon />} onClick={prevPage} direction='left' />
+            <IconBtn icon={<ChevronRightIcon />} onClick={nextPage} direction='right' />
+
             <AnimatePresence mode="wait">
                 <MotionPaper
                     key={currentPage}
@@ -96,12 +67,7 @@ export const RecipeBook = ({ recipes }: RecipeBookProps) => {
                         position: 'relative'
                     }}
                 >
-                    {/* Recipe Details */}
-                    <RecipeDetails currentRecipe={currentRecipe} />
-                    {/* Image or Video */}
-                    <RecipeMedia currentRecipe={currentRecipe} />
-
-
+                    <RecipePage currentRecipe={currentRecipe} />
                 </MotionPaper>
             </AnimatePresence>
         </Box>

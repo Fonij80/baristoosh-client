@@ -1,5 +1,5 @@
 import { Box, Typography, List, ListItem, ListItemText, Divider, useMediaQuery, useTheme as useMuiTheme } from '@mui/material';
-import { Recipe } from '../types/Recipe';
+import { Recipe } from '../../../types/Recipe';
 import { useTranslation } from 'react-i18next';
 
 interface RecipeDetailsProps {

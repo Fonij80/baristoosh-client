@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import logo from '../assets/logo1.png'
+import logo from '../../assets/logo1.png'
 
 export const Logo = () => {
     return (

@@ -1,6 +1,6 @@
-import { AppBar, Toolbar, Box, Typography, Container } from '@mui/material';
 import { useTranslation } from 'react-i18next';
-import { Logo } from './Logo';
+import { AppBar, Toolbar, Box, Typography, Container } from '@mui/material';
+import { Logo } from '../../atoms';
 
 export const Navbar = () => {
     const { t } = useTranslation();
@@ -19,10 +19,10 @@ export const Navbar = () => {
             <Container maxWidth="lg">
                 <Toolbar
                     sx={{
-                        width: '100%', // Use full container width
-                        margin: '0 auto', // Not needed but can be kept for consistency
-                        justifyContent: 'center', // Center the content
-                        padding: 2, // Add some padding inside the toolbar
+                        width: '100%',
+                        margin: '0 auto',
+                        justifyContent: 'center',
+                        padding: 2,
                     }}
                 >
                     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>

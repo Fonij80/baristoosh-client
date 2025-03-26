@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { Box, useMediaQuery, useTheme as useMuiTheme } from '@mui/material';
-import { Recipe } from '../types/Recipe';
+import { Recipe } from '../../../types/Recipe';
 
 interface RecipeMediaProps {
     currentRecipe: Recipe;
@@ -58,7 +58,7 @@ export const RecipeMedia = ({ currentRecipe }: RecipeMediaProps) => {
             {showVideo ? (
                 <video
                     ref={videoRef}
-                    src={currentRecipe.videoUrl} // Add a `videoUrl` field in your Recipe type
+                    src={currentRecipe.videoUrl}
                     style={{
                         width: '100%',
                         height: '100%',
