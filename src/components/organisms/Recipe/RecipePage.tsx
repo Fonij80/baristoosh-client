@@ -21,6 +21,7 @@ export const RecipePage = ({ currentRecipe }: RecipePageProps) => {
                 <>
                     <RecipeDetails currentRecipe={currentRecipe} />
                     <RecipeMedia currentRecipe={currentRecipe} />
+
                 </>
             )}
         </>

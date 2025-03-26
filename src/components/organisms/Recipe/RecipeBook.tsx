@@ -19,19 +19,11 @@ export const RecipeBook = ({ recipes }: RecipeBookProps) => {
     const isMobile = useMediaQuery(muiTheme.breakpoints.down('md'));
 
     const nextPage = () => {
-        if (currentPage < recipes.length - 1) {
-            setCurrentPage(currentPage + 1);
-        } else {
-            setCurrentPage(0);
-        }
+        setCurrentPage(prev => (prev < recipes.length - 1 ? prev + 1 : 0));
     };
 
     const prevPage = () => {
-        if (currentPage > 0) {
-            setCurrentPage(currentPage - 1);
-        } else {
-            setCurrentPage(recipes.length - 1);
-        }
+        setCurrentPage(prev => (prev > 0 ? prev - 1 : recipes.length - 1));
     };
 
     const currentRecipe = recipes[currentPage];

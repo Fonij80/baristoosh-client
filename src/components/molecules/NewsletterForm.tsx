@@ -11,13 +11,13 @@ export const NewsletterForm = ({ onSubmit }: NewsletterFormProps) => {
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         onSubmit(email);
-        setEmail(''); // Clear input field after submission
+        setEmail('');
     };
 
     return (
         <Box component="form" onSubmit={handleSubmit} sx={{ display: 'flex', gap: 2, mb: 2 }}>
             <TextField
-                label="Email"
+                label="ایمیل شما"
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}

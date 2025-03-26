@@ -1,6 +1,7 @@
 import { Recipe } from '../types/Recipe';
 import cappuccino from '../assets/drinks/coffee/capuccino.jpeg';
 import espresso from '../assets/drinks/coffee/espresso.jpg';
+import greentea from '../assets/drinks/tea/greentea.jpg';
 
 export const recipes_en: Recipe[] = [
     {
@@ -56,7 +57,7 @@ export const recipes_fa: Recipe[] = [
         category: "coffee",
         description: "قهوه‌ی تلخ",
         ingredients: [
-            "فهوه",
+            "قهوه",
             "آب جوش",
         ],
         instructions: [
@@ -65,6 +66,24 @@ export const recipes_fa: Recipe[] = [
         imageUrl: espresso,
         difficulty: "easy",
         preparationTime: "5 دقیقه",
+        servings: 1,
+        videoUrl: "https://file-examples.com/storage/fe7b9d8b0a5c5b5e7a8a6d3/2017/04/file_example_MP4_480_1_5MG.mp4"
+    },
+    {
+        id: 3,
+        title: "چای سبز",
+        category: "tea",
+        description: "طبیعت",
+        ingredients: [
+            "چای",
+            "آب جوش",
+        ],
+        instructions: [
+            "مخلوط کردن چای سبز با کمی آب جوش",
+        ],
+        imageUrl: greentea,
+        difficulty: "easy",
+        preparationTime: "10 دقیقه",
         servings: 1,
         videoUrl: "https://file-examples.com/storage/fe7b9d8b0a5c5b5e7a8a6d3/2017/04/file_example_MP4_480_1_5MG.mp4"
     }
