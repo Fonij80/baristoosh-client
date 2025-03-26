@@ -1,8 +1,8 @@
 import { RecipeBook } from "../components/RecipeBook";
-import { recipes } from "../data/recipes";
+import { recipes_fa } from "../data/recipes";
 
 export const Landing = () => {
     return (
-        <RecipeBook recipes={recipes} />
+        <RecipeBook recipes={recipes_fa} />
     );
 }; 

@@ -9,4 +9,5 @@ export interface Recipe {
     difficulty: 'easy' | 'medium' | 'hard';
     preparationTime: string;
     servings: number;
+    videoUrl: string;
 } 

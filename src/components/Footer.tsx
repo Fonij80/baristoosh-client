@@ -2,8 +2,11 @@ import { Box, Typography, Link } from '@mui/material';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
+    const { t } = useTranslation();
+
     return (
         <Box sx={{
             display: 'flex',
@@ -25,7 +28,7 @@ export const Footer = () => {
                 </Link>
             </Box>
             <Typography variant="body2">
-                &copy; کلیه حقوق این سایت محفوظ و متعلق به باریستوش می‌باشد.
+                {t("footer.copyright")}
             </Typography>
         </Box>
     );

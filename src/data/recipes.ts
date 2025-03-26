@@ -1,9 +1,9 @@
 import { Recipe } from '../types/Recipe';
 
-export const recipes: Recipe[] = [
+export const recipes_en: Recipe[] = [
     {
         id: 1,
-        title: "Classic Espresso",
+        title: "Cappucchino",
         category: "coffee",
         description: "A rich and bold shot of pure espresso, the foundation of many coffee drinks.",
         ingredients: [
@@ -21,53 +21,31 @@ export const recipes: Recipe[] = [
         imageUrl: "https://images.unsplash.com/photo-1510590339098-8f4b9f6c0c0e",
         difficulty: "medium",
         preparationTime: "5 minutes",
-        servings: 1
-    },
+        servings: 1,
+        videoUrl: "https://file-examples.com/storage/fe7b9d8b0a5c5b5e7a8a6d3/2017/04/file_example_MP4_480_1_5MG.mp4"
+    }
+];
+
+export const recipes_fa: Recipe[] = [
     {
-        id: 2,
-        title: "Green Tea Latte",
-        category: "tea",
-        description: "A creamy and smooth green tea latte with a perfect balance of sweetness.",
-        ingredients: [
-            "2 teaspoons matcha powder",
-            "2 tablespoons hot water",
-            "1 cup milk (any type)",
-            "2 tablespoons sweetener (optional)"
-        ],
-        instructions: [
-            "Sift matcha powder into a bowl",
-            "Add hot water and whisk until smooth",
-            "Heat milk until steaming",
-            "Pour matcha mixture into a cup",
-            "Add steamed milk and stir gently"
-        ],
-        imageUrl: "https://images.unsplash.com/photo-1515823064-d6e0c04616a7",
-        difficulty: "easy",
-        preparationTime: "10 minutes",
-        servings: 1
-    },
-    {
-        id: 3,
-        title: "Caramel Macchiato",
+        id: 1,
+        title: "کاپوچینو",
         category: "coffee",
-        description: "A delicious layered drink with vanilla, espresso, and caramel.",
+        description: "شیر و شکر و قهوه",
         ingredients: [
-            "2 shots espresso",
-            "Vanilla syrup",
-            "Steamed milk",
-            "Caramel sauce",
-            "Ice (for iced version)"
+            "فهوه",
+            "آب جوش",
+            "شکر",
+            "شیر"
         ],
         instructions: [
-            "Add vanilla syrup to the cup",
-            "Pour steamed milk (or cold milk for iced)",
-            "Add espresso shots",
-            "Top with caramel sauce",
-            "Optional: Add ice for iced version"
+            "مخلوط کردن قهوه و شکر با کمی آب جوش",
+            "اضافه کردن شیر هم‌زده شده",
         ],
-        imageUrl: "https://images.unsplash.com/photo-1541167760496-1628856ab772",
-        difficulty: "medium",
-        preparationTime: "8 minutes",
-        servings: 1
+        imageUrl: "../../../assets/drinks/coffee/capuccino.jpeg",
+        difficulty: "easy",
+        preparationTime: "5 دقیقه",
+        servings: 1,
+        videoUrl: "https://file-examples.com/storage/fe7b9d8b0a5c5b5e7a8a6d3/2017/04/file_example_MP4_480_1_5MG.mp4"
     }
 ]; 

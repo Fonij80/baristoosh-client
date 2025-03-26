@@ -2,15 +2,23 @@
     "en": {
         "brand_name": "Baristoosh",
         "brand_slogan": "Make your coffee easily at home",
+        "recipe_details": {
+            "subtitle_one": "Ingredients",
+            "subtitle_two": "Instructions"
+        },
         "footer": {
-            "copyright": "© {{year}} Portfolio made by <creator>Fonij</creator>, Inspired by <inspiration>Leo Miranda's Landing page</inspiration>"
+            "copyright": "© All the rights are reserved for Baristoosh"
         }
     },
     "fa": {
         "brand_name": "باریستوش",
         "brand_slogan": "باریستای خودت باش!",
+        "recipe_details": {
+            "subtitle_one": "مواد تشکیل‌دهنده",
+            "subtitle_two": "نحوه‌ی درست کردن"
+        },
         "footer": {
-            "copyright": "© {{year}}  ساخته شده توسط <creator>Fonij</creator>، الهام گرفته از <inspiration>Leo Miranda's Landing page</inspiration>"
+            "copyright": "© کلیه حقوق این سایت محفوظ و متعلق به باریستوش می‌باشد."
         }
     }
 }
