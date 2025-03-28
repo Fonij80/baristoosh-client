@@ -1,6 +1,6 @@
 import { Card, CardContent, CardMedia, Typography, Box, Chip, IconButton } from '@mui/material';
 import { motion } from 'framer-motion';
-import { Recipe } from '../types/Recipe';
+import { Recipe } from '../../../types/Recipe';
 import CoffeeIcon from '@mui/icons-material/Coffee';
 import LocalCafeIcon from '@mui/icons-material/LocalCafe';
 import LocalDrinkIcon from '@mui/icons-material/LocalDrink';
