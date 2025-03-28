@@ -7,8 +7,17 @@ interface SocialLinkProps {
 
 export const SocialLink = ({ href, icon }: SocialLinkProps) => {
     return (
-        <Link href={href} target="_blank" rel="noopener noreferrer">
+        <Link
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            sx={{
+                '&:hover': {
+                    color: 'secondary.main',
+                },
+            }}
+        >
             {icon}
         </Link>
-    )
-}
+    );
+};

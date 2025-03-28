@@ -7,7 +7,7 @@ import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import { IconBtn } from '../../atoms';
 import { RecipePage } from './RecipePage';
 
-const MotionPaper = motion(Paper);
+const MotionPaper = motion.create(Paper);
 
 interface RecipeBookProps {
     recipes: Recipe[];
@@ -49,9 +49,9 @@ export const RecipeBook = ({ recipes }: RecipeBookProps) => {
                     transition={{ duration: 0.5 }}
                     elevation={3}
                     sx={{
-                        width: '90%',
-                        maxWidth: '1200px',
-                        height: '80vh',
+                        width: '80%',
+                        maxWidth: '1000px',
+                        height: '70vh',
                         borderRadius: 4,
                         overflow: 'hidden',
                         display: 'flex',

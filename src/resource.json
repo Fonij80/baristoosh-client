@@ -2,6 +2,12 @@
     "en": {
         "brand_name": "Baristoosh",
         "brand_slogan": "Make your coffee easily at home",
+        "drink_categories": {
+            "coffee": "coffee",
+            "tea": "tea",
+            "milk shake": "milk shake",
+            "smoothie": "smoothie"
+        },
         "recipe_details": {
             "subtitle_one": "Ingredients",
             "subtitle_two": "Instructions",
@@ -18,6 +24,12 @@
     "fa": {
         "brand_name": "باریستوش",
         "brand_slogan": "باریستای خودت باش!",
+        "drink_categories": {
+            "coffee": "قهوه",
+            "tea": "چای",
+            "milk shake": "میلک شیک",
+            "smoothie": "اسموتی"
+        },
         "recipe_details": {
             "subtitle_one": "مواد تشکیل‌دهنده",
             "subtitle_two": "نحوه‌ی درست کردن",

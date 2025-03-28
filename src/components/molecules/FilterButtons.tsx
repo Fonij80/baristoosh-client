@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { Box, Button } from '@mui/material';
 import { DRINK_CATEGORIES } from '../../types/DrinkCategories';
 
@@ -7,12 +8,13 @@ interface FilterButtonsProps {
 }
 
 export const FilterButtons = ({ onFilter, selectedCategories }: FilterButtonsProps) => {
+    const { t } = useTranslation();
     return (
         <Box sx={{
             display: 'flex',
             flexWrap: 'wrap',
             justifyContent: 'center',
-            gap: 2, // Gap between buttons
+            gap: 2,
             mb: 2,
             mt: 2,
         }}>
@@ -22,16 +24,11 @@ export const FilterButtons = ({ onFilter, selectedCategories }: FilterButtonsPro
                     onClick={() => onFilter(category, !selectedCategories.includes(category))}
                     sx={{
                         borderRadius: 20,
-                        backgroundColor: selectedCategories.includes(category)
-                            ? 'primary.main'
-                            : 'transparent',
-                        color: selectedCategories.includes(category)
-                            ? 'white'
-                            : 'text.primary',
+                        border: '1px solid',
                         minWidth: 100,
                     }}
                 >
-                    {category.charAt(0).toUpperCase() + category.slice(1)}
+                    {t(`drink_categories.${category}`)}
                 </Button>
             ))}
         </Box>
