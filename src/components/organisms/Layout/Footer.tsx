@@ -14,7 +14,7 @@ export const Footer = () => {
             alignItems: 'center',
             py: 4,
         }}>
-            <NewsletterForm onSubmit={handleSubscribe} />
+            {/* <NewsletterForm onSubmit={handleSubscribe} /> */}
             <SocialLinksGroup />
             <CopyRight />
         </Box>

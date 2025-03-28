@@ -1,7 +1,7 @@
 export interface Recipe {
     id: number;
     title: string;
-    category: 'coffee' | 'tea' | 'other';
+    category: 'coffee' | 'tea' | 'milk shake' | 'smoothie';
     description: string;
     ingredients: string[];
     instructions: string[];

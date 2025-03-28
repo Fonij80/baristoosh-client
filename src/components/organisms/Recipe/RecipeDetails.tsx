@@ -30,8 +30,13 @@ export const RecipeDetails = ({ currentRecipe }: RecipeDetailsProps) => {
             </Typography>
             <List dense>
                 {currentRecipe.ingredients.map((ingredient, index) => (
-                    <ListItem key={index}>
-                        <ListItemText primary={ingredient} />
+                    <ListItem key={index} dir="rtl">
+                        <ListItemText
+                            primary={ingredient}
+                            primaryTypographyProps={{
+                                textAlign: 'right',
+                            }}
+                        />
                     </ListItem>
                 ))}
             </List>
@@ -43,10 +48,13 @@ export const RecipeDetails = ({ currentRecipe }: RecipeDetailsProps) => {
             </Typography>
             <List dense>
                 {currentRecipe.instructions.map((instruction, index) => (
-                    <ListItem key={index}>
+                    <ListItem key={index} dir="rtl">
                         <ListItemText
                             primary={`${index + 1}. ${instruction}`}
-                            primaryTypographyProps={{ variant: 'body2' }}
+                            primaryTypographyProps={{
+                                variant: 'body2',
+                                textAlign: 'right',
+                            }}
                         />
                     </ListItem>
                 ))}

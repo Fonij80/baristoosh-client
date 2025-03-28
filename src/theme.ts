@@ -3,13 +3,13 @@ import { createTheme } from '@mui/material';
 export const theme = createTheme({
     palette: {
         primary: {
-            main: '#ffffff',
+            main: '#D0F0C0',
         },
         secondary: {
-            main: '#2E7D32',
+            main: '#D0F0C0',
         },
         background: {
-            default: '#D5C5B5',
+            default: '#FFF',
         },
     },
     typography: {
@@ -22,8 +22,8 @@ export const theme = createTheme({
         MuiCssBaseline: {
             styleOverrides: {
                 body: {
-                    background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
-                    minHeight: '100vh',
+                    // background: 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)',
+                    // minHeight: '100vh',
                 },
             },
         },
