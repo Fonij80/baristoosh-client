@@ -4,7 +4,12 @@
         "brand_slogan": "Make your coffee easily at home",
         "recipe_details": {
             "subtitle_one": "Ingredients",
-            "subtitle_two": "Instructions"
+            "subtitle_two": "Instructions",
+            "difficulty": {
+                "easy": "easy",
+                "medium": "medium",
+                "hard": "hard"
+            }
         },
         "footer": {
             "copyright": "© All the rights are reserved for Baristoosh"
@@ -15,7 +20,12 @@
         "brand_slogan": "باریستای خودت باش!",
         "recipe_details": {
             "subtitle_one": "مواد تشکیل‌دهنده",
-            "subtitle_two": "نحوه‌ی درست کردن"
+            "subtitle_two": "نحوه‌ی درست کردن",
+            "difficulty": {
+                "easy": "آسان",
+                "medium": "متوسط",
+                "hard": "سخت"
+            }
         },
         "footer": {
             "copyright": "© کلیه حقوق این سایت محفوظ و متعلق به باریستوش می‌باشد."

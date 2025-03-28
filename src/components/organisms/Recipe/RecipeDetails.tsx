@@ -1,15 +1,25 @@
-import { Box, Typography, List, ListItem, ListItemText, Divider, useMediaQuery, useTheme as useMuiTheme } from '@mui/material';
+import { Box, Divider, useMediaQuery, useTheme as useMuiTheme } from '@mui/material';
+import { PreparationOverview } from './PreparationOverview';
+import { PageTitle } from './PageTitle';
+import { Ingredients } from './Ingredients';
+import { Instructions } from './Instructions.tsx';
 import { Recipe } from '../../../types/Recipe';
-import { useTranslation } from 'react-i18next';
 
 interface RecipeDetailsProps {
     currentRecipe: Recipe;
 }
 
 export const RecipeDetails = ({ currentRecipe }: RecipeDetailsProps) => {
-    const { t } = useTranslation();
     const muiTheme = useMuiTheme();
     const isMobile = useMediaQuery(muiTheme.breakpoints.down('md'));
+
+    const backgroundColor = {
+        'coffee': '#D0A48D',
+        'tea': '#E1F7C7',
+        'milk shake': '#AAD0C8',
+        'smoothie': '#FFDAB9',
+        'juice': 'FAD6A5',
+    };
 
     return (
         <Box sx={{
@@ -17,60 +27,18 @@ export const RecipeDetails = ({ currentRecipe }: RecipeDetailsProps) => {
             height: isMobile ? '60%' : '100%',
             p: 3,
             overflowY: 'auto',
+            backgroundColor: backgroundColor[currentRecipe.category],
         }}>
-            <Typography variant="h5" component="h2" gutterBottom>
-                {currentRecipe.title}
-            </Typography>
-            <Typography variant="body2" color="text.secondary" paragraph>
-                {currentRecipe.description}
-            </Typography>
+            <PageTitle currentRecipe={currentRecipe} />
 
-            <Typography variant="subtitle1" gutterBottom sx={{ mt: 2 }}>
-                {t("recipe_details.subtitle_one")}
-            </Typography>
-            <List dense>
-                {currentRecipe.ingredients.map((ingredient, index) => (
-                    <ListItem key={index} dir="rtl">
-                        <ListItemText
-                            primary={ingredient}
-                            primaryTypographyProps={{
-                                textAlign: 'right',
-                            }}
-                        />
-                    </ListItem>
-                ))}
-            </List>
+            <PreparationOverview currentRecipe={currentRecipe} />
+
+
+            <Ingredients currentRecipe={currentRecipe} />
 
             <Divider sx={{ my: 2 }} />
 
-            <Typography variant="subtitle1" gutterBottom>
-                {t("recipe_details.subtitle_two")}
-            </Typography>
-            <List dense>
-                {currentRecipe.instructions.map((instruction, index) => (
-                    <ListItem key={index} dir="rtl">
-                        <ListItemText
-                            primary={`${index + 1}. ${instruction}`}
-                            primaryTypographyProps={{
-                                variant: 'body2',
-                                textAlign: 'right',
-                            }}
-                        />
-                    </ListItem>
-                ))}
-            </List>
-
-            <Box sx={{ mt: 2, display: 'flex', gap: 2, flexWrap: 'wrap' }}>
-                <Typography variant="caption" color="text.secondary">
-                    ⏱️ {currentRecipe.preparationTime}
-                </Typography>
-                <Typography variant="caption" color="text.secondary">
-                    👥 {currentRecipe.servings} servings
-                </Typography>
-                <Typography variant="caption" color="text.secondary">
-                    📊 {currentRecipe.difficulty}
-                </Typography>
-            </Box>
+            <Instructions currentRecipe={currentRecipe} />
         </Box>
     )
 }
