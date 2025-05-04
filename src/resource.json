@@ -10,6 +10,12 @@
         "login": "Login"
       }
     },
+    "home_page": {
+      "title": "Welcome to Baristoosh",
+      "subtitle": "The Art of Handcrafted Beverages",
+      "description": "Create delicious beverages at home without expensive equipment.",
+      "cta_btn": "See Recipes"
+    },
     "drink_categories": {
       "coffee": "coffee",
       "tea": "tea",
@@ -39,6 +45,12 @@
         "recipes": "دستورها",
         "login": "ورود"
       }
+    },
+    "home_page": {
+      "title": "به باریستوش خوش آمدید",
+      "subtitle": "هنر نوشیدنی‌های دست‌ساز",
+      "description": "بدون نیاز به تجهیزات گران‌قیمت، نوشیدنی‌های خوشمزه در خانه بسازید.",
+      "cta_btn": "دستورها را ببینید"
     },
     "drink_categories": {
       "coffee": "قهوه",

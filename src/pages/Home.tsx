@@ -18,19 +18,19 @@ export const Home = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-6xl font-handwritten text-baristoosh-brown mb-6">
-              {t("home.title")}
+              {t("home_page.title")}
             </h1>
             <h2 className="text-2xl md:text-3xl font-semibold mb-6">
-              {t("home.subtitle")}
+              {t("home_page.subtitle")}
             </h2>
             <p className="text-lg mb-8 text-baristoosh-coffee">
-              {t("home.description")}
+              {t("home_page.description")}
             </p>
             <Button
               asChild
               className="bg-baristoosh-brown text-white hover:bg-baristoosh-coffee"
             >
-              <Link to="/recipes">{t("home.cta")}</Link>
+              <Link to="/recipes">{t("home_page.cta_btn")}</Link>
             </Button>
           </motion.div>
 
@@ -53,7 +53,7 @@ export const Home = () => {
                 transition={{ repeat: Infinity, duration: 3 }}
               >
                 <span className="text-baristoosh-brown font-handwritten text-xl">
-                  {t("brand.slogan")}
+                  {t("brand_slogan")}
                 </span>
               </motion.div>
             </div>
