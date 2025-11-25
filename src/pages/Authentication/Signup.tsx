@@ -56,7 +56,7 @@ export const Signup = () => {
       <Card className="w-full max-w-md bg-baristoosh-paper shadow-lg">
         <CardHeader className="space-y-1">
           <CardTitle className="text-3xl font-handwritten text-center">
-            {t("nav.signup")}
+            {t("auth_page.signup_title")}
           </CardTitle>
         </CardHeader>
 
@@ -64,7 +64,7 @@ export const Signup = () => {
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
               <label htmlFor="fullName" className="text-sm font-medium">
-                {t("auth.fullName")}
+                {t("auth_page.full_name")}
               </label>
               <Input
                 id="fullName"
@@ -78,7 +78,7 @@ export const Signup = () => {
 
             <div className="space-y-2">
               <label htmlFor="email" className="text-sm font-medium">
-                {t("auth.email")}
+                {t("auth_page.email")}
               </label>
               <Input
                 id="email"
@@ -93,7 +93,7 @@ export const Signup = () => {
 
             <div className="space-y-2">
               <label htmlFor="password" className="text-sm font-medium">
-                {t("auth.password")}
+                {t("auth_page.password")}
               </label>
               <Input
                 id="password"
@@ -107,25 +107,29 @@ export const Signup = () => {
 
             <div className="space-y-2">
               <label htmlFor="favoriteDrink" className="text-sm font-medium">
-                {t("auth.favoriteDrink")}
+                {t("auth_page.favorite_drink")}
               </label>
               <Select
                 value={favoriteDrinkType}
                 onValueChange={setFavoriteDrinkType}
               >
                 <SelectTrigger className="bg-white border-baristoosh-coffee/30">
-                  <SelectValue placeholder={t("recipes.type.coffee")} />
+                  <SelectValue
+                    placeholder={t("recipe_page.drink_categories.coffee")}
+                  />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="coffee">
-                    {t("recipes.type.coffee")}
+                    {t("recipe_page.drink_categories.coffee")}
                   </SelectItem>
-                  <SelectItem value="tea">{t("recipes.type.tea")}</SelectItem>
+                  <SelectItem value="tea">
+                    {t("recipe_page.drink_categories.tea")}
+                  </SelectItem>
                   <SelectItem value="smoothie">
-                    {t("recipes.type.smoothie")}
+                    {t("recipe_page.drink_categories.smoothie")}
                   </SelectItem>
                   <SelectItem value="milkshake">
-                    {t("recipes.type.milkshake")}
+                    {t("recipe_page.drink_categories.milkshake")}
                   </SelectItem>
                 </SelectContent>
               </Select>
@@ -152,7 +156,7 @@ export const Signup = () => {
                   </span>
                 </div>
               ) : (
-                t("auth.signupButton")
+                t("auth_page.signup_btn")
               )}
             </Button>
           </form>
@@ -160,12 +164,12 @@ export const Signup = () => {
 
         <CardFooter className="text-center">
           <div className="w-full text-sm">
-            {t("auth.haveAccount")}{" "}
+            {t("auth_page.have_account_link")}{" "}
             <Link
               to="/login"
               className="text-baristoosh-coffee hover:underline font-medium"
             >
-              {t("nav.login")}
+              {t("navbar.links.login")}
             </Link>
           </div>
         </CardFooter>

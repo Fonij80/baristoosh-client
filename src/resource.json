@@ -7,7 +7,8 @@
         "home": "Home",
         "shop": "Shop",
         "recipes": "Recipes",
-        "login": "Login"
+        "login": "Login",
+        "signup": "Sign Up"
       }
     },
     "home_page": {
@@ -16,23 +17,36 @@
       "description": "Create delicious beverages at home without expensive equipment.",
       "cta_btn": "See Recipes"
     },
-    "drink_categories": {
-      "coffee": "coffee",
-      "tea": "tea",
-      "milk shake": "milk shake",
-      "smoothie": "smoothie"
+    "recipe_page": {
+      "title": "Baristoosh Recipe Book",
+      "search_bar": "Search Recipes",
+      "filter": "Filter by Type",
+      "add_btn": "Add New Recipe",
+      "ingredients": "Ingredients",
+      "instructions": "Instructions",
+      "drink_categories": {
+        "coffee": "Coffee",
+        "tea": "Tea",
+        "milkshake": "Milkshake",
+        "smoothie": "Smoothie",
+        "all": "All"
+      },
+      "next_page_btn": "Next Page",
+      "prev_page_btn": "Previous Page"
     },
-    "recipe_details": {
-      "subtitle_one": "Ingredients",
-      "subtitle_two": "Instructions",
-      "difficulty": {
-        "easy": "easy",
-        "medium": "medium",
-        "hard": "hard"
-      }
+    "auth_page": {
+      "full_name": "Full Name",
+      "password": "Password",
+      "email": "email",
+      "favorite_drink": "Favorite Drink",
+      "login_btn": "Login",
+      "signup_btn": "Sign Up",
+      "google_login": "Login with Google",
+      "no_account_link": "Don't have an account?",
+      "have_account_link": "Already have an account?"
     },
     "footer": {
-      "copyright": "© All the rights are reserved for Baristoosh"
+      "copyright": "© 2025 All the rights are reserved for Baristoosh."
     }
   },
   "fa": {
@@ -43,7 +57,8 @@
         "home": "خانه",
         "shop": "فروشگاه",
         "recipes": "دستورها",
-        "login": "ورود"
+        "login": "ورود",
+        "signup": "ثبت‌نام"
       }
     },
     "home_page": {
@@ -52,23 +67,38 @@
       "description": "بدون نیاز به تجهیزات گران‌قیمت، نوشیدنی‌های خوشمزه در خانه بسازید.",
       "cta_btn": "دستورها را ببینید"
     },
-    "drink_categories": {
-      "coffee": "قهوه",
-      "tea": "چای",
-      "milk shake": "میلک شیک",
-      "smoothie": "اسموتی"
+    "recipe_page": {
+      "title": "کتاب دستورهای باریستوش",
+      "search_bar": "جستجوی دستور",
+      "filter": "فیلتر بر اساس نوع",
+      "add_btn": "افزودن دستور جدید",
+      "ingredients": "مواد لازم",
+      "instructions": "دستورالعمل",
+      "drink_categories": {
+        "coffee": "قهوه",
+        "tea": "چای",
+        "milkshake": "میلک شیک",
+        "smoothie": "اسموتی",
+        "all": "همه"
+      },
+      "next_page_btn": "صفحه بعد",
+      "prev_page_btn": "صفحه قبل"
     },
-    "recipe_details": {
-      "subtitle_one": "مواد تشکیل‌دهنده",
-      "subtitle_two": "نحوه‌ی درست کردن",
-      "difficulty": {
-        "easy": "آسان",
-        "medium": "متوسط",
-        "hard": "سخت"
-      }
+    "auth_page": {
+      "login_title": "ورود",
+      "signup_title": "ثبت‌نام",
+      "full_name": "نام کامل",
+      "password": "رمز عبور",
+      "email": "ایمیل",
+      "favorite_drink": "نوشیدنی مورد علاقه",
+      "login_btn": "ورود",
+      "signup_btn": "ثبت‌نام",
+      "google_login": "ورود با گوگل",
+      "no_account_link": "حساب کاربری ندارید؟",
+      "have_account_link": "حساب کاربری دارید؟"
     },
     "footer": {
-      "copyright": "© کلیه حقوق این سایت محفوظ و متعلق به باریستوش می‌باشد."
+      "copyright": "© 2025 کلیه حقوق این سایت محفوظ و متعلق به باریستوش می‌باشد."
     }
   }
 }

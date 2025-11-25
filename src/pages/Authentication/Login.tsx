@@ -65,7 +65,7 @@ export const Login = () => {
       <Card className="w-full max-w-md bg-baristoosh-paper shadow-lg">
         <CardHeader className="space-y-1">
           <CardTitle className="text-3xl font-handwritten text-center">
-            {t("nav.login")}
+            {t("auth_page.login_title")}
           </CardTitle>
         </CardHeader>
 
@@ -73,7 +73,7 @@ export const Login = () => {
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
               <label htmlFor="email" className="text-sm font-medium">
-                {t("auth.email")}
+                {t("auth_page.email")}
               </label>
               <Input
                 id="email"
@@ -88,7 +88,7 @@ export const Login = () => {
 
             <div className="space-y-2">
               <label htmlFor="password" className="text-sm font-medium">
-                {t("auth.password")}
+                {t("auth_page.password")}
               </label>
               <Input
                 id="password"
@@ -121,7 +121,7 @@ export const Login = () => {
                   </span>
                 </div>
               ) : (
-                t("auth.loginButton")
+                t("auth_page.login_btn")
               )}
             </Button>
           </form>
@@ -159,18 +159,18 @@ export const Login = () => {
                 fill="#EA4335"
               />
             </svg>
-            {t("auth.googleLogin")}
+            {t("auth_page.google_login")}
           </Button>
         </CardContent>
 
         <CardFooter className="text-center">
           <div className="w-full text-sm">
-            {t("auth.noAccount")}{" "}
+            {t("auth_page.no_account_link")}{" "}
             <Link
               to="/signup"
               className="text-baristoosh-coffee hover:underline font-medium"
             >
-              {t("nav.signup")}
+              {t("navbar.links.signup")}
             </Link>
           </div>
         </CardFooter>
